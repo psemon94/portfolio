@@ -1,0 +1,67 @@
+@media (max-width:800px) {
+    .pc{display: none !important;}
+
+/* section #main */
+#main .typing{
+    font-size: 43px;
+}
+
+
+/* section #about */
+#about .frame{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+#about .heart1{
+    top: 0; left: 10%;
+}
+#about .heart2{
+    top: 20%; left: 7%;
+}
+#about .heart3{
+    top: 8%; left: 0%;
+}
+#about .heart4{
+    top: 5%; right: 7%;
+}
+#about .heart5{
+    top: 13%; right: 0%;
+}
+#about .heart6{
+    top: 20%; right: 5%;
+}
+
+#about .about{
+    flex-direction: column;
+}
+#about .about .profile{
+    flex: 1;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* section #portfolio */
+#portfolio ul li{
+    width: calc(50% - 10px);
+    height: 150px;
+    margin: 5px;
+}
+#portfolio ul li a .bg h3,
+#portfolio ul li a .bg p{
+    font-size: 15px;
+    padding: 5px 0;
+    opacity: 1;
+}
+
+/* section #contact */
+#contact .con2 a:after{
+    width: 100%;
+}
+#contact .con2{
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+}

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴비츠</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /*모바일 인덱스만 해더가 .on고정*/
+        header .m_header{
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+        }
+        header .m_header .blue{
+        display: block;
+        }
+        header .m_header .white{
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="pc">
+        <div class="wrap">
+            <h1>
+                <a href="index.html">
+                    <img src="images/hu_logo.png" alt="Huvitz">
+                </a>
+            </h1>
+
+            <nav id="gnbbox">
+                <ul id="gnb">
+                    <li class="gnb_main">
+                        <a href="company.html">기업정보</a>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#none">사업소개</a>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#none">핵심경쟁력</a>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#none">투자정보</a>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#none">홍보센터</a>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#none">제품정보</a>
+                    </li>
+                </ul>
+            </nav><!--/gnb-->
+    
+            <ul id="snb">
+                <li id="pick">
+                    <a href="#none">인재채용</a>
+                </li>
+                <li id="snsbox">
+                    <a href="#none">follow</a>
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com" class="youtube" target="_blank">유</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" class="insta" target="_blank">인</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com" class="facebook" target="_blank">페</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="lang">
+                    <a href="#none">언어</a>
+                    <ul>
+                        <li>
+                            <a href="#none">KOR</a>
+                        </li>
+                        <li>
+                            <a href="#none">ENG</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul><!--/snb-->
+        </div><!--/wrap-->
+        <div class="g_sub">
+            <div class="wrap">
+                <div>
+                    <ul>
+                        <li><a href="company.html">기업소개</a></li>
+                        <li><a href="#none">경영철학</a></li>
+                        <li><a href="#none">연혁</a></li>
+                        <li><a href="#none">오시는 길</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#none">사업영역</a></li>
+                        <li><a href="#none">글로벌 네트워크</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#none">R&D경쟁력</a></li>
+                        <li><a href="#none">품질경쟁력</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#none">재무정보</a></li>
+                        <li><a href="#none">주가정보</a></li>
+                        <li><a href="#none">공고</a></li>
+                        <li><a href="#none">공시</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#none">NEWS ROOM</a></li>
+                        <li><a href="#none">소통채널</a></li>
+                        <li><a href="#none">사회공헌</a></li>
+                        <li><a href="#none">CI</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#none">안광학 기기</a></li>
+                        <li><a href="#none">산업용 3D검사</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--g_sub-->
+    </header><!--PC-->
+    <div id="header_box" class="pc"></div>
+
+
+
+    <!--mobile header-->
+    <header class="mob">
+        <div class="wrap">
+            <div class="m_header">
+                <h1>
+                    <a href="index.html">
+                        <img src="images/m_logo_white.png" alt="huvitz" class="white">
+                        <img src="images/m_logo.png" alt="Huvitz" class="blue">
+                    </a>
+                </h1>
+
+                <div class="nav_off">
+                    <a href="#none">
+                        <img src="images/ico_person_white.png" alt="채용" class="white">
+                        <img src="images/ico_person_black.png" alt="채용" class="blue">
+                    </a>
+                    <a href="#none" id="nav_on">
+                        <img src="images/nav_white.png" alt="메뉴버튼" class="white">
+                        <img src="images/nav.png" alt="메뉴버튼" class="blue">
+                    </a>
+                </div>
+            </div><!--.m_header-->
+
+            <nav>
+                <h2>
+                    <a href="huvitz_index.html">
+                        <img src="images/m_logo_white.png" alt="Huvitz" class="white_hu">
+                    </a>
+                </h2>
+
+                <div class="nav_on">
+                    <div class="nav_on_header">
+                        <div class="lang">
+                            <a href="#none" class="select">KOR</a>
+                            <a href="#none">ENG</a>
+                        </div>
+                        <a href="#none">
+                            <img src="images/ico_person_black.png" alt="채용">
+                        </a>
+                        <a href="#none">
+                            <img src="images/closed.png" alt="닫기버튼" id="nav_off">
+                        </a>
+                    </div>
+    
+                    <ul id="gnb_m">
+                        <li>
+                            <a href="#none">기업정보</a>
+                            <ul>
+                                <li><a href="company.html">기업소개</a></li>
+                                <li><a href="#none">경영철학</a></li>
+                                <li><a href="#none">연혁</a></li>
+                                <li><a href="#none">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">사업소개</a>
+                            <ul>
+                                <li><a href="#none">사업영역</a></li>
+                                <li><a href="#none">글로벌 네트워크</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">핵심경쟁력</a>
+                            <ul>
+                                <li><a href="#none">R&D경쟁력</a></li>
+                                <li><a href="#none">품질경쟁력</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">투자정보</a>
+                            <ul>
+                                <li><a href="#none">재무정보</a></li>
+                                <li><a href="#none">주가정보</a></li>
+                                <li><a href="#none">공고</a></li>
+                                <li><a href="#none">공시</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">홍보센터</a>
+                            <ul>
+                                <li><a href="#none">NEWS ROOM</a></li>
+                                <li><a href="#none">소통채널</a></li>
+                                <li><a href="#none">사회공헌</a></li>
+                                <li><a href="#none">CI</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">제품정보</a>
+                            <ul>
+                                <li><a href="#none">안광학 기기</a></li>
+                                <li><a href="#none">산업용 3D검사</a></li>
+                            </ul>
+                        </li>
+                    </ul><!--/#gnb_m-->
+
+                    <ul id="snsbox_m">
+                        <li>
+                            <a href="#">
+                                <img src="images/btn_youtube_hover.png" alt="유튜브바로가기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/btn_insta_hover.png" alt="인스타그램바로가기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/btn_facebook_hover.png" alt="페이스북바로가기">
+                            </a>
+                        </li>
+                    </ul><!--/#snsbox-->
+                </div><!--//.nav_on-->
+            </nav>
+        </div><!--wrap-->
+    </header><!--mob-->
+
+
+
+    <!--상담버튼-->
+    <a href="#none" class="qa_btn">
+        <img src="images/btn_call.png" alt="문의사항">
+        <span>문의하기</span>
+    </a><!--//상담버튼-->
+
+
+
+    <!--#main_visual-->
+    <section id="main_visual">
+        <h2 class="blind">메인비주얼영역</h2>
+        <div class="wrap">
+            <div id="frame">
+                <ul class="slide">
+                    <li>
+                        <img src="images/img_visual01.jpg" alt="이미지1">
+                    </li>
+                    <li>
+                        <img src="images/img_visual02.jpg" alt="이미지2">
+                    </li>
+                    <li>
+                        <img src="images/img_visual03.jpg" alt="이미지3">
+                    </li>
+                </ul><!-- /.slide -->
+            </div><!-- /#frame -->
+
+            <ul class="txtlist">
+                <li class="select">
+                    <div class="txtbox">
+                        <p class="tit">
+                            <span>
+                                <em>Re</em>:define
+                            </span>
+                            <br>
+                            <span>
+                                <em>Re</em>:create
+                            </span>
+                        </p>
+                        <p class="txt">
+                            <span>
+                                기존의 틀을 벗어나 새로운 관점으로 세상을 봅니다.
+                            </span>
+                            <br>
+                            <span>
+                                변화와 혁신을 통해 새로운 가치를 만들어 갑니다.
+                            </span>
+                        </p>
+                    </div>
+                </li>
+
+                <li >
+                    <div class="txtbox">
+                        <p class="tit">
+                            <span>
+                                <em>We</em>Care
+                            </span>
+                            <br>
+                            <span>
+                                <em>We</em>Share
+                            </span>
+                        </p>
+                        <p class="txt">
+                            <span>
+                                글로벌 헬스케어 산업을 이끌어가는 대표기업으로
+                            </span>
+                            <br>
+                            <span>
+                                ‘함께하는 사회’를 만들어 갑니다.
+                            </span>
+                        </p>
+                    </div>
+                </li>
+
+                <li >
+                    <div class="txtbox">
+                        <p class="tit">
+                            <span>
+                                <em>Better</em> Technology
+                            </span>
+                            <br>
+                            <span>
+                                <em>Better</em> Life
+                            </span>
+                        </p>
+                        <p class="txt">
+                            <span>
+                                세계적 수준의 R&D 전문성을 바탕으로
+                            </span>
+                            <br>
+                            <span>
+                                안광학 의료기기의 새로운 패러다임을 제시합니다.
+                            </span>
+                        </p>
+                    </div>
+                </li>
+            </ul><!-- /.txtlist -->
+        </div><!-- /.wrap -->
+    </section><!-- /#main_visual -->
+
+    <!--section1-->
+    <section id="better_life">
+        <div class="wrap">
+            <h2 class="title">Better Life Huvitz</h2>
+            <ul>
+                <li>
+                    <img src="images/betterimg_1.jpg" alt="이미지1">
+                    <h3>Philosophy</h3>
+                    <p>더 좋은 기술로<br>
+                    더 나은 삶을 구현합니다.</p>
+                </li>
+                <li>
+                    <img src="images/betterimg_2.jpg" alt="이미지2">
+                    <h3>Mission</h3>
+                    <p>기술의 '가치'에 '같이'를<br>
+                    더해 인류 건강에 공헌합니다.</p>
+                </li>
+                <li>
+                    <img src="images/betterimg_3.jpg" alt="이미지3">
+                    <h3>Philosophy</h3>
+                    <p>기술 기반의 글로벌 광학전문<br>
+                    강소기업 휴비츠입니다.</p>
+                </li>
+                <li>
+                    <img src="images/betterimg_4.jpg" alt="이미지4">
+                    <h3>Core Value</h3>
+                    <p>휴비츠의 핵심가치는<br>
+                    동반성장과 가치입니다.</p>
+                </li>
+            </ul>
+            <div class="btn_more">
+                <a href="#none" class="more on">
+                    <div class="more_bg"></div>
+                    <img src="images/more.png" alt="more" class="img_more">
+                    <span class="txt_more">more</span>
+                </a>
+            </div>
+        </div><!--//.wrap-->
+    </section><!--//#better_life-->
+
+    <!--section2-->
+    <section id="product">
+        <div class="wrap">
+            <h2 class="title">Product</h2>
+            <ul class="main_vod_list">
+                <li class="active">
+                    <iframe src="https://www.youtube.com/embed/k7lmuG0_fRE" data-src="https://www.youtube.com/embed/k7lmuG0_fRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <!--
+                <li>
+                    <iframe src="" data-src="https://www.youtube.com/embed/4CndJ7HyOro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe src="" data-src="https://www.youtube.com/embed/vVatU7qVS7o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe src="" data-src="https://www.youtube.com/embed/0yZUFRhwavY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                -->
+            </ul>
+            <ul class="vod_bar">
+                <li class="active">HPE-8000X</li>
+                <li>HOCT-1/1F</li>
+                <li>HRK-9000A</li>
+                <li>HPE-910</li>
+            </ul>
+        </div>
+    </section><!--//#product-->
+
+    <!--section3-->
+    <section id="news">
+        <div class="wrap">
+            <h2 class="title">News</h2>
+        </div>
+        <div class="main_news">
+            <div class="news_container">
+                <ul class="news_wrap">
+                    <li class="news_slide">
+                        <a href="#none">
+                            <div class="sw_item">
+                                <div class="news_img">
+                                    <div class="news_img_bg" style="background: url(images/news_news1.jpg) no-repeat center/cover;"></div>
+                                </div>
+                                <div class="news_cont">
+                                    <div class="news_cont_top">
+                                        <h2>NEWSROOM</h2>
+                                        <span>2021-04-30</span>
+                                    </div>
+                                    <p>휴비츠, 1Q 매출액 217.7억원 ‘1분기 사상 최대 ‘ 전년比 27%…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news_slide">
+                        <a href="#none">
+                            <div class="sw_item">
+                                <div class="news_img">
+                                    <div class="news_img_bg" style="background: url(images/news_news2.jpg) no-repeat center/cover;"></div>
+                                </div>
+                                <div class="news_cont">
+                                    <div class="news_cont_top">
+                                        <h2>NEWSROOM</h2>
+                                        <span>2021-04-30</span>
+                                    </div>
+                                    <p>휴비츠, 1Q 매출액 217.7억원 ‘1분기 사상 최대 ‘ 전년比 27%…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news_slide">
+                        <a href="#none">
+                            <div class="sw_item">
+                                <div class="news_img">
+                                    <div class="news_img_bg" style="background: url(images/news_news3.jpg) no-repeat center/cover;"></div>
+                                </div>
+                                <div class="news_cont">
+                                    <div class="news_cont_top">
+                                        <h2>NEWSROOM</h2>
+                                        <span>2021-04-30</span>
+                                    </div>
+                                    <p>휴비츠, 1Q 매출액 217.7억원 ‘1분기 사상 최대 ‘ 전년比 27%…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news_slide">
+                        <a href="#none">
+                            <div class="sw_item">
+                                <div class="news_img">
+                                    <div class="news_img_bg" style="background: url(images/news_news4.jpg) no-repeat center/cover;"></div>
+                                </div>
+                                <div class="news_cont">
+                                    <div class="news_cont_top">
+                                        <h2>NEWSROOM</h2>
+                                        <span>2021-04-30</span>
+                                    </div>
+                                    <p>휴비츠, 1Q 매출액 217.7억원 ‘1분기 사상 최대 ‘ 전년比 27%…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news_slide">
+                        <a href="#none">
+                            <div class="sw_item">
+                                <div class="news_img">
+                                    <div class="news_img_bg" style="background: url(images/news_news5.jpg) no-repeat center/cover;"></div>
+                                </div>
+                                <div class="news_cont">
+                                    <div class="news_cont_top">
+                                        <h2>NEWSROOM</h2>
+                                        <span>2021-04-30</span>
+                                    </div>
+                                    <p>휴비츠, 1Q 매출액 217.7억원 ‘1분기 사상 최대 ‘ 전년比 27%…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news_slide">
+                        <a href="#none">
+                            <div class="sw_item">
+                                <div class="news_img">
+                                    <div class="news_img_bg" style="background: url(images/news_sns1.png) no-repeat center/cover;"></div>
+                                </div>
+                                <div class="news_cont">
+                                    <div class="news_cont_top">
+                                        <h2>NEWSROOM</h2>
+                                        <span>2021-04-30</span>
+                                    </div>
+                                    <p>휴비츠, 1Q 매출액 217.7억원 ‘1분기 사상 최대 ‘ 전년比 27%…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news_slide">
+                        <a href="#none">
+                            <div class="sw_item">
+                                <div class="news_img">
+                                    <div class="news_img_bg" style="background: url(images/news_sns2.png) no-repeat center/cover;"></div>
+                                </div>
+                                <div class="news_cont">
+                                    <div class="news_cont_top">
+                                        <h2>NEWSROOM</h2>
+                                        <span>2021-04-30</span>
+                                    </div>
+                                    <p>휴비츠, 1Q 매출액 217.7억원 ‘1분기 사상 최대 ‘ 전년比 27%…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--//#news-->
+
+    <!--section4-->
+    <section id="recruit">
+        <div class="wrap">
+            <h2 class="title">Recruit</h2>
+            <p>도전과 열정을 갖춘 당신은 휴비츠의 미래입니다.<br>
+            눈 건강의 미래를 함께 만들어갈 여러분의 지원을 기다립니다.</p>
+            <div class="btn_more">
+                <a href="#none" class="more on">
+                    <div class="more_bg"></div>
+                    <img src="images/more.png" alt="more" class="img_more">
+                    <span class="txt_more">more</span>
+                </a>
+            </div>
+            <div class="recruit_img">
+                <img src="images/person01.png" alt="이미지1">
+                <div class="circle_frame">
+                    <img src="images/person02.jpg" alt="동그라미액자안이미지">
+                </div>
+            </div>
+        </div><!--//.wrap-->
+    </section><!--//#recruit-->
+
+    <!--footer-->
+    <footer>
+        <div class="wrap">
+            <div class="foot_link">
+                <ul class="foot_link_left pc">
+                    <li>
+                        <a href="#none">기업정보</a>
+                    </li>
+                    <li>
+                        <a href="#none">사업영역</a>
+                    </li>
+                    <li>
+                        <a href="#none">핵심경쟁력</a>
+                    </li>
+                    <li>
+                        <a href="#none">투자정보</a>
+                    </li>
+                    <li>
+                        <a href="#none">홍보센터</a>
+                    </li>
+                    <li>
+                        <a href="#none">제품정보</a>
+                    </li>
+                </ul><!--//.foot_link_left-->
+                <ul class="foot_link_right">
+                    <li>
+                        <a href="#none">개인정보 취급방침</a>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <a href="#none">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#none">LOGIN</a>
+                    </li>
+                </ul><!--//.foot_link_right-->
+                <div class="copy mob">
+                    <p>Copyright 2021 Huvitz Corp. All rights reserved <span>ADMIN</span></p>
+                </div>
+            </div><!--//.foot_link-->
+            <address>
+                <p>
+                    경기도 안양시 동안구 부림로 170번길 38 ㈜휴비츠 |
+                    <a href="tel:031-428-9100">T. 031-428-9100</a>
+                </p>
+                <p>
+                    F. 031-477-8617(영업,관리) | 031-477-8619(R&D) <span class="pc">/</span>
+                    <br class="mob">031-477-8616(자재) | 031-477-8618(공장)
+                </p>
+            </address>
+            <div class="copy pc">
+                <p>Copyright 2021 Huvitz Corp. All rights reserved <span>ADMIN</span></p>
+            </div>
+            <a href="#" class="btn_top"></a>
+        </div><!--//.wrap-->
+    </footer>
+    <!--//footer-->
+
+
+    <!-- script -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

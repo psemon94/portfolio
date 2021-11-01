@@ -1,0 +1,380 @@
+/* reset */
+*{
+    margin : 0; padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+img{
+    vertical-align: top;
+}
+::selection {
+    background: #7aa9df;
+    color: #fff;
+}
+/* 공통요소 */
+html{
+    overflow-x: hidden;
+}
+html, body{
+    height: 100%;
+}
+body{
+    color: #222;
+}
+.wrap{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.wrap:after, ul:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.blind{
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+
+/* ul .menu */
+.menu{
+    background: rgba(255, 255, 135, 0.6);
+    position: fixed;
+    z-index: 100;
+    right: -70px;
+    top: 30%;
+    transition: all 0.5s;
+}
+.menu .btn{
+    background: #f3be1c url(../images/menubtn1.png) no-repeat center;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.menu.on{
+    right: 0px;
+}
+.menu.on .btn{
+    background: rgb(228, 228, 228) url(../images/menubtn2.png) no-repeat center;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+}
+.menu li{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+    padding: 10px 0;
+    margin: 0 20px;
+    position: relative;
+    transition: all 0.3s;
+}
+.menu li:hover,
+.menu .select{
+    letter-spacing: 0.4em;
+    color: #f2b807;
+}
+
+/* section공통 */
+section{
+    height: auto;
+    padding-bottom: 30px;
+}
+
+/* section #main */
+#main{
+    background: url(../images/main.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .typing{
+    position: relative;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 4px 0px rgba(36, 10, 155, 0.5);
+}
+
+/* .title */
+.title{
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+    text-shadow: 2px 0 0 #f3be1c,
+    -2px 0 0 #f3be1c,
+    0 2px 0 #f3be1c,
+    0 -2px 0 #f3be1c,
+    1px 1px #f3be1c,
+    -1px -1px 0 #f3be1c,
+    1px -1px 0 #f3be1c,
+    -1px 1px 0 #f3be1c;
+}
+
+/* section #about */
+#about .frame{
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+#about .frame img{
+    width: 250px;
+}
+#about .heart{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+}
+#about .heart1{
+    animation: heartbeat 3s infinite;
+    top: 0; left: 20%;
+}
+#about .heart2{
+    animation: heartbeat 3s infinite;
+    top: 30%; left: 20%;
+}
+#about .heart3{
+    animation: heartbeat2 3s infinite;
+    top: 15%; left: 10%;
+}
+#about .heart4{
+    animation: heartbeat2 3s infinite;
+    top: 5%; right: 15%;
+}
+#about .heart5{
+    animation: heartbeat 3s infinite;
+    top: 15%; right: 5%;
+}
+#about .heart6{
+    animation: heartbeat2 3s infinite;
+    top: 30%; right: 20%;
+}
+@keyframes heartbeat{
+    0%{font-size: 20px;}
+    50%{font-size: 26px;}
+    100%{font-size: 20px;}
+}
+@keyframes heartbeat2{
+    0%{font-size: 28px;}
+    50%{font-size: 20px;}
+    100%{font-size: 28px;}
+}
+
+#about .about{
+    background: rgba(205, 219, 241, 0.5);
+    display: flex;
+    margin-top: 50px;
+    padding: 30px 0;
+    border-radius: 20px;
+}
+#about .about h3{/*제목*/
+    font-size: 24px;
+    background: rgb(255, 255, 255);
+    width: 90%;
+    margin: 0 auto;
+}
+/* #about .about .profile */
+#about .about .profile{
+    flex: 1;
+    font-weight: bold;
+}
+#about .about .profile .profilebox{
+    width: 90%;
+    margin: 0 auto;
+}
+#about .about .profile span{
+    color: #f3a92e;
+    font-size: 18px;
+    width: 100px;
+    display: block;
+    margin: 7px 0 5px;
+}
+
+/* #about .about .skills */
+#about .about .skills{
+    flex: 2;
+}
+#about .about .skills .empty{
+    background: #ccc;
+    width: 90%;
+    height: 30px;
+    margin: 30px auto;
+}
+#about .about .skills .bar{
+    position: relative;
+    line-height: 30px;
+    transition: all 1.5s cubic-bezier(0.77, 0, 0.48, 1.26);
+    border-radius: 0 15px 15px 0;
+}
+#about .about .skills .bar p{
+    padding-left: 10px;
+}
+#about .about .skills .bar span{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    opacity: 0;
+}
+#about .about .skills .empty.on span{
+    opacity: 1;
+}
+/*html*/
+#about .about .skills .bar1{
+    width: 0;
+    background: linear-gradient(to right, #f76133, #ffa24c);
+}
+#about .about .skills .empty.on .bar1{
+    width: 80%;
+}
+/*css*/
+#about .about .skills .bar2{
+    width: 0;
+    background: linear-gradient(to right, #3392ff, #9af3ff );
+}
+#about .about .skills .empty.on .bar2{
+    width: 80%;
+}
+/*jquery*/
+#about .about .skills .bar3{
+    width: 0;
+    background: linear-gradient(to right, #ffce2c, #edde5d);
+}
+#about .about .skills .empty.on .bar3{
+    width: 60%;
+}
+
+
+
+
+
+/* section #portfolio */
+#portfolio{
+    background: rgb(223, 223, 223);
+}
+#portfolio ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#portfolio ul li{
+    width: calc(50% - 10px);
+    height: 300px;
+    margin: 5px;
+}
+#portfolio ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all;
+}
+#portfolio ul li a .bg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all;
+}
+#portfolio ul li a .bg h3,
+#portfolio ul li a .bg p{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: auto;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.5s all;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+#portfolio ul li a:hover{
+    animation: bgs 0.7s forwards;
+}
+@keyframes bgs{
+    0%{background-size: 100%;}
+    100%{background-size: 105%;}
+}
+#portfolio ul li a:hover .bg{
+    background:rgba(0, 0, 0, 0.5);
+}
+#portfolio ul li a:hover .bg h3,
+#portfolio ul li a:hover .bg p{
+    opacity: 1;
+}
+/*휴비츠*/
+#portfolio .pf1 a{
+    background: url(../images/pf1.jpg) no-repeat center/cover;
+}
+/*인천광역시*/
+#portfolio .pf2 a{
+    background: url(../images/pf3.jpg) no-repeat center/cover;
+}
+/*요양병원*/
+#portfolio .pf3 a{
+    background: url(../images/pf2.jpg) no-repeat center/cover;
+}
+/*모닝커피*/
+#portfolio .pf4 a{
+    background: url(../images/pf4.jpg) no-repeat center/cover;
+}
+
+
+
+/* section #contact */
+#contact .con1{
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+}
+#contact .con2{
+    font-size: 36px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#contact .con2 a{
+    transition: all 0.3s;
+    position: relative;
+}
+#contact .con2 a:after{
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 20px solid rgba(236, 142, 205, 0.4);
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    transition: all 0.5s;
+}
+#contact .con2 a:hover:after{
+    width: 100%;
+}

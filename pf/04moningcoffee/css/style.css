@@ -1,0 +1,557 @@
+@font-face {
+    font-family: 'adm';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin:0; padding:0;}
+li {list-style:none;}
+a {text-decoration: none; color: inherit;}
+img {vertical-align: top;}
+/* --------------------초기화-------------------- */
+
+body {
+    font-family: 'adm';
+}
+.wrap {
+    width:1200px;
+    margin:0 auto;
+    position: relative;
+}
+.wrap:after, ul:after,.cl:after {
+    content:"";
+    clear:both;
+    display: block;
+}
+.blind {
+    position: absolute;
+    left:-9999px;
+    width: 0;
+    height: 0;
+    font-size:0;
+    overflow: hidden;
+}
+/* --------------------공통요소-------------------- */
+
+
+
+
+
+header{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+}
+header h1 img{
+    height: 45px;
+}
+header .wrap{
+    padding-top: 25px;
+}
+header #gnb{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+header #gnb li{
+    float: left;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+header #gnb li a:link,
+header #gnb li a:visited{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+}
+header #gnb li a:hover,
+header #gnb li a:active,
+header #gnb li a:focus{
+    background: #bc71d1;
+    color: #fefefe;
+}
+
+#block{
+    height: 80px;
+}
+/* --------------------header-------------------- */
+
+
+
+
+
+footer{
+    background: #ccc;
+}
+footer #link ul li{
+    float: left;
+    margin-right: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #333;
+}
+footer #addr{
+    height: 140px;
+    background: #fcd97d;
+    color: #666;
+}
+footer #info{
+    padding-top: 35px;
+}
+footer #info li{
+    float: left;
+    margin-right: 100px;
+}
+footer address{
+    padding: 20px 0 20px 0;
+    font-style: normal;
+    line-height: 1.6;
+    font-size: 12px;
+}
+footer #info li:last-child{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+footer #info li strong{
+    font-size: 24px;
+    color: #2600ff;
+}
+/* --------------------footer-------------------- */
+
+
+
+
+
+/* --------------------index-------------------- */
+#main{
+    background: url(../images/coffee_b_yellow.jpg) no-repeat center/cover fixed;
+    width: 100%;
+    height: 600px;
+}
+#main .wrap dl{
+    font-family: "adm";
+    height: 500px;
+    padding-top: 100px;
+    margin-left: 150px;
+    box-sizing: border-box;
+}
+#main .wrap dl dt{
+    font-size: 42px;
+    font-weight: 600;
+}
+#main .wrap dl dd{
+    font-size: 32px;
+    padding-top: 30px;
+}
+#main .wrap dl dd span{
+    font-size: 46px;
+    font-weight: 600;
+    background: #fff;
+}
+
+#main #slide > a{
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+}
+#main #slide .prev{
+    left: 0;
+}
+#main #slide .next{
+    right: 0;
+}
+
+#main .wrap .page{
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+#main .wrap .page li{
+    display: inline-block;
+    background: #fff;
+    border-radius: 7px;
+    margin: 0 4px 0 4px;
+}
+#main .wrap .page #select{
+    background: #777;
+}
+#main .wrap .page li a{
+    display: block;
+    width: 13px;
+    height: 13px;
+}
+
+
+
+
+
+#snsbox{
+    background: #bc71d1;
+    height: 60px;
+}
+#snsbox h2{
+    font-size: 16px;
+    line-height: 60px;
+    color: #fefefe;
+}
+#snsbox ul{
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+#snsbox ul li{
+    float: left;
+    margin-left: 30px;
+}
+#snsbox img{
+    width: 30px;
+}
+
+
+
+
+
+#mon{
+    background: #333 url(../images/mon.png) no-repeat center;
+    height: 400px;
+    text-align: center;
+}
+#mon .wrap dl{
+    color: #fff;
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+#mon .wrap dl dt{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+#mon .wrap dl dd{
+    font-size: 16px;
+}
+#mon .wrap a:link,
+#mon .wrap a:visited{
+    color: #fff;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block
+}
+#mon .wrap a:hover,
+#mon .wrap a:active,
+#mon .wrap a:focus{
+    background: rgba(188, 113, 209, 0.7);
+}
+
+
+
+
+
+#cont{
+    margin: 100px 0 100px 0;
+}
+#cont .sec{
+    height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#cont .sec:nth-child(1){
+    background: url(../images/monbean.png) no-repeat right;
+}
+#cont .sec:nth-child(2){
+    background: url(../images/menufd.png) no-repeat left;
+}
+#cont .sec:nth-child(3){
+    background: url(../images/md.png) no-repeat right;
+}
+
+#cont .sec .textbox{
+    padding-top: 50px;
+    width: 300px;
+}
+#cont .sec:nth-child(even) .textbox{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#cont .textbox dt{
+    font-size: 24px;
+}
+#cont .textbox dd{
+    font-size: 16px;
+    margin: 25px 0 40px;
+}
+#cont .textbox a:link,
+#cont .textbox a:visited{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: rgba(65, 65, 65, 0.5);
+    border-radius: 50px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+#cont .textbox a:hover,
+#cont .textbox a:active,
+#cont .textbox a:focus{
+    background: rgba(188, 113, 209, 0.7);
+}
+
+
+
+
+#insta{
+    margin-bottom: 50px;
+}
+#insta .wrap{
+    text-align: center;
+}
+#insta .wrap h2{
+    font-size: 24px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    background: #fcd97d;
+}
+#insta .wrap ul li{
+    float: left;
+    width: 20%;
+    height: 240px;
+    overflow: hidden;
+}
+#insta .wrap ul li img{
+    width: 240px;
+}
+/* --------------------/index-------------------- */
+
+
+
+
+
+/* --------------------카페소개-------------------- */
+#monmain{
+    height: 400px;
+    background: #f0f0f0 url(../images/moning.png) no-repeat center;
+}
+#monmain h2{
+    font-size: 36px;
+    font-weight: 900;
+    color: #222;
+    margin: 0 100px 0;
+    padding-top: 100px;
+    line-height: 1.6;
+}
+
+
+#hello .wrap #title{
+    border-bottom: 1px solid #000;
+    padding: 100px 0 20px 0;
+}
+#hello .wrap #title h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+#hello .wrap #title p{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+
+#hello #hello1,
+#hello #hello2{
+    text-align: center;
+}
+#hello #hello1{
+    margin-top: 30px;
+}
+
+
+#hello .wrap div ul li{
+    float: left;
+}
+#hello .wrap div ul li dl{
+    padding-top: 50px;
+    width: 600px;
+}
+#hello .wrap div ul li dl dt{
+    font-size: 20px;
+    font-weight: 600;
+}
+#hello .wrap div ul li dl dd{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+/* --------------------/카페소개-------------------- */
+
+
+
+
+
+/* --------------------메뉴소개-------------------- */
+.menu{
+    height: 400px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.menu .ment{
+    background: rgba(255,255,255, 0.7);
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.menu .ment h2{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 30px 0 30px 0;
+}
+.menu .ment p{
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.menu .ment a:link,
+.menu .ment a:visited{
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+    width: 60px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+}
+.menu .ment a:hover,
+.menu .ment a:active,
+.menu .ment a:focus{
+    background: #bc71d1;
+}
+
+#menu1{
+    background: #000 url(../images/moncoffee.png) no-repeat center;
+}
+#menu2{
+    background: #000 url(../images/monfruite.png) no-repeat center;
+}
+#menu3{
+    background: #000 url(../images/monfood.png) no-repeat center;
+}
+/* --------------------/메뉴소개-------------------- */
+
+
+
+
+
+/* --------------------커피메뉴-------------------- */
+#maincofe{
+    background: url(../images/moncoffee.png) no-repeat center;
+    height: 250px;
+    text-align: center;
+}
+#maincofe .wrap div{
+    padding-top: 80px;
+}
+#maincofe .wrap div h2{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+#maincofe .wrap div p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
+
+.snb .wrap{
+    height: 70px;
+}
+.snb .wrap ul{
+    width: 900px;
+    margin: 30px auto;
+    border-bottom: 1px solid #333;
+    box-sizing: border-box;
+}
+.snb .wrap ul li{
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    box-sizing: border-box;
+}
+.snb .wrap ul li:nth-child(1){
+    margin-left: 0;
+}
+.snb .wrap ul li a:link,
+.snb .wrap ul li a:visited{
+    display: block;
+    font-size: 16px;
+    width: 300px;
+}
+.snb .wrap ul li a:hover,
+.snb .wrap ul li a:active,
+.snb .wrap ul li a:focus{
+    background: #fcd97d;
+}
+
+
+
+
+
+.wrap .menu_sch{
+    margin-top: 20px;
+    border: 1px solid #fcd97d;
+    height: 90px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.wrap .menu_sch h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.wrap .menu_sch ul li{
+    float: left;
+    margin-right: 55px;
+    font-size: 14px;
+}
+.wrap .menu_sch ul li input{
+    width: 17px;
+    height: 17px;
+    margin: -3px 7px 0 0;
+    vertical-align: middle;
+}
+
+
+
+
+
+.list .wrap #listcoffee li{
+    float: left;
+}
+.list .wrap #listcoffee li{
+    width: 232px;
+    height: 232px;
+    overflow: hidden;
+    margin: 10px 10px 10px 0;
+}
+.list .wrap #listcoffee li img{
+    width: 232px;
+}
+.list .wrap #listcoffee li:nth-child(5n){
+    margin-right: 0;
+}
+/* --------------------/커피메뉴-------------------- */

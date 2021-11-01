@@ -1,0 +1,1208 @@
+/* 웹폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* reset */
+*{
+    margin : 0; padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+img{
+    vertical-align: top;
+}
+::selection {
+    background: #8acb33;
+    color: #fff;
+}
+/* 공통요소 */
+html{
+    overflow-x: hidden;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: 'Noto Sans KR';
+    color: #222;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.wrap:after, ul:after, .cl:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.blind{
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+
+
+/* header */
+/* #logo 전화/로고/인증마크 */
+header #logo{
+    height: 80px;
+}
+/* 전화번호 */
+header #logo #tel{
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+header #logo #tel li{
+    float: left;
+    font-size: 23px;
+    font-weight: bold;
+}
+/* 로고 */
+header #logo h1{
+    padding-top: 10px;
+    margin-left: 440px;
+}
+header #logo h1 img{
+    height: 60px;
+}
+/* 인증마크 */
+header #logo > img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*블럭*/
+.box.pc{
+    height: 60px;
+}
+
+/* footer */
+footer{
+    background: #619cc4;
+    font-size: 14px;
+}
+footer ul li{
+    float: left;
+    height: 50px;
+    margin-right: 33px;
+    line-height: 50px;
+    color: #fff;
+}
+footer ul li a{
+    display: block;
+}
+
+footer div{
+    background: #fff;
+    height: 150px;
+}
+footer div address{
+    font-style: normal;
+    padding-top: 40px;
+}
+footer div p{
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    line-height: 1.8;
+}
+/* ----------/헤더/푸터---------- */
+
+
+/* ----------index.html---------- */
+/* index_main */
+#index_main{
+    height: 500px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+#index_main .slide{
+    position: relative;
+    width: 200%;
+}
+#index_main .slide li{
+    float: left;
+    height: 500px;
+    width: 50%;
+}
+#index_main h2{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 5px 2px 5px #333;
+}
+/*버튼*/
+#index_main a{
+    position: absolute;
+    top: calc(50% - 15px);
+}
+#index_main .prev{
+    left: 20px;
+}
+#index_main .next{
+    right: 20px;
+}
+
+
+
+/* section #cont */
+/* clinic */
+#clinic{
+    background: url(../images/clinic.png) no-repeat center/cover;
+    height: 300px;
+    width: 800px;
+}
+#clinic ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+/* 반원 */
+#clinic ul li:first-child{
+    background: rgb(97, 156, 196, 0.7);
+    height: 300px;
+    width: 150px;
+    line-height: 300px;
+    border-radius: 0 150px 150px 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 5px 2px 5px #333;
+}
+#clinic ul li{
+    margin-right: 15px;
+    text-align: center;
+}
+/* 동그라미 */
+#clinic ul li a:link,
+#clinic ul li a:visited{
+    display: block;
+    background: rgb(255, 255, 255, 0.6);
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* 인공신장클리닉 */
+#clinic ul #c1 a:hover,
+#clinic ul #c1 a:active,
+#clinic ul #c1 a:focus{
+    background: rgba(137, 203, 51, 0.6);
+    box-shadow: 5px 5px 10px #333;
+    color: #fff;
+}
+/* 웃음클리닉 */
+#clinic ul #c2 a:hover,
+#clinic ul #c2 a:active,
+#clinic ul #c2 a:focus{
+    background: rgba(202, 167, 11, 0.7);
+    box-shadow: 5px 5px 10px #333;
+    color: #fff;
+}
+/* 재활클리닉 */
+#clinic ul #c3 a:hover,
+#clinic ul #c3 a:active,
+#clinic ul #c3 a:focus{
+    background: rgba(208, 136, 223, 0.7);
+    box-shadow: 5px 5px 10px #333;
+    color: #fff;
+}
+
+
+
+/* section #time */
+#time{
+    background: url(../images/time.png) no-repeat center/cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 395px;
+    height: 370px;
+    text-align: center;
+}
+#time h3{
+    font-size: 30px;
+    padding: 50px 0 30px 0;
+}
+#time div p{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#time div p strong{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+#time > p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #af0000;
+    margin-top: 30px;
+}
+
+
+
+/* article #notice 공지사항/식단*/
+article{
+    width: 800px;
+}
+/* 공통 */
+article div{
+    float: left;
+    width: 395px;
+    height: 435px;
+    position: relative;
+    padding: 30px 30px 0 30px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+article div h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+/* 밑줄 */
+article div h3:after{
+    content: "";
+    border-bottom: 5px solid #d2e5ec;
+    border-radius: 0 3px 3px 0;
+    display: block;
+    position: relative;
+    left: -30px;
+}
+article #notice h3:after{
+    width: 270px;
+}
+article #food h3:after{
+    width: 240px;
+}
+/* 더보기버튼 */
+article div > a{
+    position: absolute;
+    top: 35px;
+    right: 30px;
+}
+/* 리스트 */
+article ul{
+    padding-top: 30px;
+}
+article ul li{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #bbb;
+    box-sizing: border-box;
+}
+
+
+
+/* section #gall */
+#gall{
+    position: absolute;
+    right: 0;
+    top: 380px;
+}
+#gall #frame{
+    width: 395px;
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+}
+#gall #frame ul{
+    position: relative;
+    width: 1580px;
+}
+#gall #frame ul li{
+    float: left;
+}
+/*버튼*/
+#gall a{
+    display: block;
+    position: absolute;
+    top: calc(50% - 15px);
+}
+#gall .next{
+    right: 0;
+}
+
+
+
+/* #info 지도 / 상담신청 */
+#info{
+    margin-top: 10px;
+}
+/* 지도 */
+#info #map iframe{
+    width: 800px;
+    height: 400px;
+}
+/* 상담신청 */
+#info form{
+    background: #efefef;
+    width: 395px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#info form fieldset{
+    border: none;
+}
+#info form legend{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+#info form table tr th{
+    text-align: left;
+    width: 20%;
+}
+#info form table tr td{
+    width: 80%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+form table td input[type="text"]{
+    height:24px;
+    padding:0 10px;
+}
+/* 연락처 */
+#info form #hp1{
+    width: 60px;
+    height: 24px;
+    padding: 0 3px
+}
+#info form #hp2,
+#info form #hp3{
+    width: 25%;
+}
+/* 메일 */
+#info form #mail{
+    width: 50%;
+}
+#info form #mail2{
+    height: 24px;
+}
+/* 문의사항 */
+#info form #qna{
+    width: 100%;
+    height: 100px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+/* 개인정보약관동의 */
+#say{
+    font-size: 14px;
+    width: 80%;
+    margin: 15px auto;
+}
+#say a{
+    background: #619cc4;
+    display: inline-block;
+    border-radius: 100px;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+}
+/* 상담신청버튼 */
+#submit input[type="submit"]{
+    background: #8acb33;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    width: 40%;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+/*-------------------intro.html----------------------*/
+/* intro_main */
+#intro_main{
+    background: url(../images/intro_main.jpg) no-repeat center/cover;
+    height: 300px;
+}
+#intro_main h2{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    color: #fff;
+    text-shadow: 5px 2px 5px #333;
+}
+
+
+
+/* #snb = wrap */
+#snb ul{
+    background: #fff;
+    height: 50px;
+    border-bottom: 1px solid #8acb33;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+#snb ul li{
+    float: left;
+    width: 25%;
+}
+#snb ul li a:link,
+#snb ul li a:visited{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+}
+#snb ul li a:hover,
+#snb ul li a:active,
+#snb ul li a:focus{
+    color: #fff;
+    background: #8acb33;
+}
+
+
+
+/* #video = wrap */
+#video h2{
+    text-align: center;
+    margin-top: 50px;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #f8fa79be, #ff98e7aa, #65d3ffaa);
+    border-image-slice: 1;
+    padding: 50px 0 10px;
+}
+#video iframe{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+
+
+/* #intro_txt = wrap*/
+#intro_txt h2{
+    text-align: center;
+    line-height: 1.8;
+    margin: 50px 0;
+    font-size: 20px;
+}
+/* #blue */
+#intro_txt #blue{
+    background: url(../images/hand_intro.jpg) no-repeat left;
+    height: 400px;
+    position: relative;
+}
+#intro_txt #blue h3{
+    text-align: center;
+    position: absolute;
+    top: 45px;
+    left: 40%;
+}
+#intro_txt #blue img{
+    margin-left: 350px;
+    width: 800px;
+}
+#intro_txt #blue p{
+    margin-left: 430px;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+/* #pink */
+#intro_txt #pink{
+    background: url(../images/fam_intro.jpg) no-repeat right;
+    height: 400px;
+    position: relative;
+    margin: 50px 0;
+}
+#intro_txt #pink h3{
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: 20%;
+}
+#intro_txt #pink img{
+    width: 800px;
+}
+#intro_txt #pink p{
+    line-height: 1.8;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------vision.html----------------------*/
+/* 미션 */
+#mission .wrap div{
+    background: url(../images/pastel.png) no-repeat center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#mission .wrap div h3{
+    margin: 20px 0;
+    font-size: 26px;
+    color: #fff;
+}
+#mission .wrap div p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+/* 비전 */
+#vision .wrap h3{
+    font-size: 26px;
+    text-align: center;
+    padding: 20px 0;
+}
+#vision .wrap ul li{
+    float: left;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    margin: 0 75px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* li p */
+#vision ul li p{
+    text-align: center;
+    color: #222;
+}
+#vision ul li .p1{
+    font-size: 24px;
+    font-weight: 500;
+}
+#vision ul li .p2{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* 배경이미지 */
+#vision .wrap ul #v1{
+    background: url(../images/fam_vision.png) no-repeat center/cover;
+}
+#vision .wrap ul #v2{
+    background: url(../images/heart_flower.png) no-repeat center/cover;
+}
+#vision .wrap ul #v3{
+    background: url(../images/trust_vision.png) no-repeat center/cover;
+}
+#vision .wrap ul #v4{
+    background: url(../images/smile_vision.png) no-repeat center/cover;
+}
+#vision .wrap ul #v5{
+    background: url(../images/clean_vision.png) no-repeat center/cover;
+}
+#vision .wrap ul #v6{
+    background: url(../images/sunny_vision.png) no-repeat center/cover;
+}
+
+
+
+
+
+
+
+
+
+/* 모바일용 */
+@media (max-width:800px) {
+.pc{
+    display: none !important;
+}
+.wrap{
+    width: 100%; 
+}
+/* header */
+header #logo{
+    height: 50px;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header #logo #tel{
+    top: 0;
+}
+header #logo #tel img{
+    height: 50px;
+}
+header #logo h1{
+    padding-top: 0px;
+    margin-left: calc(50% - 35px);
+}
+header #logo h1 img{
+    height: 50px;
+}
+
+/*모바일메뉴*/
+#logo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#logo > a img{
+    height: 50px;
+}
+
+/*toggleClass*/
+/* #gnb_m */
+#gnb_m{
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    z-index: 100;
+    top: 50px;
+    right:-100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+#gnb_m.on{
+    right: 0;
+}
+#gnb_m .wrap{
+    height: 100%;
+}
+#gnb_m .g_main_m{
+    display: block;
+    background: #619cc4;
+    font-size: 18px;
+    padding: 20px 0;
+    color: #fff;
+}
+#gnb_m .g_sub_m{
+    display: none;
+    color: #222;
+}
+#gnb_m .g_sub_m li a{
+    display: block;
+    padding: 10px 0;
+    line-height: 40px;
+    border-bottom: 1px solid #b8b8b8;
+    z-index: 200;
+}
+
+
+/*블럭*/
+.box{
+    height: 50px;
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
+footer ul li{
+    float: none;
+    margin-right: 0;
+}
+footer ul li a{
+    width: 200px;
+    margin: 0 auto;
+}
+
+footer div{
+    height: 150px;
+}
+footer div address{
+    padding-top: 10px;
+}
+footer div h2 img{
+    height: 50px;
+}
+footer div p{
+    position: static;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+/* ----------/header /footer ---------- */
+
+
+
+    /* index_main */
+#index_main{
+    background: url(../images/mainvisual.jpg) no-repeat top center/cover;
+    height: 300px;
+    margin-bottom: 0;
+}
+#index_main .slide li{
+    float: left;
+    height: 300px;
+    width: 50%;
+}
+#index_main h2{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 5px 2px 5px #333;
+}
+#index_main .prev{
+    left: 0;
+}
+#index_main .next{
+    right: 0;
+}
+
+
+/* section #cont */
+/* clinic */
+#clinic{
+    width: 100%;
+    height: auto;
+}
+#clinic ul{
+    display: block;
+    padding-bottom: 5px;
+}
+/* 반원 */
+#clinic ul li:first-child{
+    height: 100px;
+    width: 200px;
+    line-height: 100px;
+    border-radius: 0 0 100px 100px;
+}
+#clinic ul li{
+    margin-right: 0px;
+    margin: 0px auto 5px;
+}
+/* 동그라미 */
+#clinic ul li a:link,
+#clinic ul li a:visited{
+    margin: 0 auto;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#clinic ul li a:hover,
+#clinic ul li a:active,
+#clinic ul li a:focus{
+    background: rgb(97, 156, 196, 0.7);
+    box-shadow: 5px 5px 10px #333;
+    color: #fff;
+}
+
+
+/* section #time */
+#time{
+    background: url(../images/time.png) no-repeat center/cover;
+    width: 96%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    position: static;
+    margin-top: 10px;
+}
+#time h3{
+    font-size: 26px;
+    padding: 30px 0 10px 0;
+}
+#time div p{
+    font-size: 20px;
+}
+#time div p strong{
+    font-size: 26px;
+}
+#time > p{
+    margin-top: 30px;
+}
+
+
+
+
+/* article #notice */
+article{
+    width: 100%;
+    margin-top: 15px;
+}
+article div{
+    float: none;
+    width: 96%;
+    margin: 10px auto 0;
+    padding: 20px 20px 0 20px;
+}
+article div h3{
+    font-size: 26px;
+}
+
+article div > a{
+    top: 25px;
+    right: 20px;
+}
+
+article ul{
+    margin-top: 20px;
+}
+
+article #notice h3:after{
+    width: 80%;
+    left: -20px;
+}
+
+
+article #food h3:after{
+    width: 70%;
+    left: -20px;
+}
+
+
+
+
+/* section #gall */
+#gall{
+    width: 96%;
+    height: 300px;
+    margin: 10px auto 0;
+    position: static;
+}
+#gall > div{
+    position: relative;
+}
+#gall #frame{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+#gall #frame ul{
+    position: relative;
+    width: 1580px;
+    height: 300px;
+}
+#gall #frame ul li{
+    float: left;
+}
+#gall #frame ul li img{
+    width: 100%;
+}
+/*버튼*/
+#gall a{
+    display: block;
+    position: absolute;
+    top: calc(50% - 15px);
+}
+#gall .next{
+    right: 0;
+}
+
+
+
+/* #info 지도 / 상담신청 */
+/* 지도 */
+#info #map iframe{
+    width: 96%;
+    margin: 0 auto;
+    display: block;
+}
+/* 상담신청 */
+#info form{
+    width: 96%;
+    margin: 10px auto;
+    position: static;
+}
+/* 연락처 */
+#info form #hp2,
+#info form #hp3{
+    width: 20%;
+}
+/* 메일 */
+#info form #mail{
+    width: 40%;
+}
+#info form #mail2{
+    height: 24px;
+}
+/* 문의사항 */
+/* 개인정보약관동의 */
+#say{
+    width: 90%;
+    font-size: 13px;
+}
+/* 상담신청버튼 */
+
+
+
+
+
+
+
+
+
+
+/*-------------------intro.html----------------------*/
+/* intro_main */
+#intro_main{
+    height: 150px;
+    width: 100%;
+}
+#intro_main h2{
+    height: 150px;
+    font-size: 26px;
+}
+/* #snb = wrap */
+#snb ul{
+    background: #fff;
+    height: 50px;
+    border-bottom: 1px solid #8acb33;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+#snb ul li{
+    float: left;
+    width: 25%;
+}
+#snb ul li a:link,
+#snb ul li a:visited{
+    font-size: 14px;
+}
+
+
+
+/* #video = wrap */
+#video h2{
+    text-align: center;
+    margin-top: 20px;
+}
+#video iframe{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+/* #intro_txt = wrap*/
+#intro_txt{
+    width: 100%;
+}
+#intro_txt h2{
+    font-size: 18px;
+}
+/* 공통 */
+#intro_txt div h3{
+    text-align: center;
+    position: static;
+    padding: 40px 0;
+    box-sizing: border-box;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+#intro_txt div p{
+    margin-left: 0;
+    margin-top: 0;
+    line-height: 1.8;
+    background: rgba(0, 0, 0, 0.5);
+    word-break: keep-all;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 400px;
+}
+/* #blue */
+#intro_txt #blue{
+    background: url(../images/hand_intro.jpg) no-repeat center/cover;
+    width: 96%;
+    height: 500px;
+    margin: 10px auto;
+}
+#intro_txt #blue h3{
+    position: static;
+}
+#intro_txt #blue p{
+    margin-left: 0;
+    margin-top: 0;
+
+}
+/* #pink */
+#intro_txt #pink{
+    background: url(../images/fam_intro.jpg) no-repeat center/cover;
+    width: 96%;
+    height: 500px;
+    margin: 0 auto 30px;
+}
+#intro_txt #pink h3{
+    text-align: center;
+    position: static;
+}
+#intro_txt #pink p{
+    line-height: 1.8;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+/*-------------------vision.html----------------------*/
+/* 미션 */
+#mission .wrap{
+    width: 96%;
+    margin: 0 auto;
+}
+#mission .wrap div{
+    background: url(../images/pastel.png) no-repeat center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#mission .wrap div h3{
+    margin: 20px 0;
+    font-size: 26px;
+    color: #fff;
+}
+#mission .wrap div p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+/* 비전 */
+#vision .wrap{
+    width: 96%;
+    margin: 0 auto;
+}
+#vision .wrap h3{
+    padding: 10px 0;
+}
+#vision .wrap ul li{
+    float: none;
+    margin: 10px auto;
+}
+/* li p */
+#vision ul li p{
+    text-align: center;
+}
+#vision ul li .p1{
+    font-size: 24px;
+    font-weight: 500;
+}
+#vision ul li .p2{
+    font-weight: 500;
+}
+/* 배경이미지 */
+}
+
+/* pc용 */
+@media (min-width:801px) {
+    .mob{
+        display: none !important;
+    }
+
+    article div{
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+    article #food{
+        margin-right: 0;
+    }
+
+    /* #gnb */
+#gnb{
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 60px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#gnb div > ul > li{
+    float: left;
+}
+#gnb .g_main:link,
+#gnb .g_main:visited{
+    width: 240px;
+    display: block;
+    line-height: 60px;
+}
+#gnb .g_main:hover,
+#gnb .g_main:active,
+#gnb .g_main:focus{
+    background: #619cc4;
+    color: #fff;
+}
+/*스크롤*/
+#gnb.fix{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+/*마우스오버*/
+#gnb.down{
+    height: 260px;
+}
+#gnb .g_sub li a:link,
+#gnb .g_sub li a:visited{
+    display : block;
+    line-height: 50px;
+}
+#gnb .g_sub li a:hover,
+#gnb .g_sub li a:active,
+#gnb .g_sub li a:focus{
+    background: #8acb33;
+}
+}
+
